@@ -1,6 +1,10 @@
-// Nav scroll state
+// Nav scroll state — checks on load too so browser scroll-restoration doesn't leave the nav in the wrong state
 const nav = document.getElementById('nav');
-if(nav) window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 30), {passive:true});
+if(nav){
+  const updateNavScroll = () => nav.classList.toggle('scrolled', scrollY > 30);
+  window.addEventListener('scroll', updateNavScroll, {passive:true});
+  updateNavScroll();
+}
 
 // Nav drawer
 let navOpen = false;
