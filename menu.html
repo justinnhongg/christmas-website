@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,800;0,900;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body class="no-hero">
+<body>
 
 <!-- NAV -->
 <nav id="nav">
@@ -39,15 +39,17 @@
   <a href="index.html#booking" onclick="closeNav()" class="drawer-book">Book a Room →</a>
 </div>
 
-<!-- MENU -->
-<section id="menu">
-  <div class="menu-header">
-    <div>
-      <p class="section-eyebrow reveal">Drinks & Food</p>
-      <h2 class="menu-h2 reveal d1">What's <em>on tap.</em></h2>
-    </div>
-    <p class="menu-sub reveal d2">Order straight from your room. No need to leave the stage.</p>
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="page-header-inner">
+    <p class="page-header-eyebrow">Drinks & Food</p>
+    <h1>What's <em>on tap.</em></h1>
+    <p class="page-header-sub">Order straight from your room. Full bar, full kitchen, and the song list never stops.</p>
   </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" style="padding-top:4rem;">
   <div class="menu-tabs reveal">
     <button class="menu-tab-btn active" onclick="switchMenu('cocktails',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 11v11"/><path d="M19 3H5l7 8z"/></svg>House Drinks</button>
     <button class="menu-tab-btn" onclick="switchMenu('spirits',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>Spirits & Shooters</button>
