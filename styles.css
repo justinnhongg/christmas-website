@@ -136,6 +136,7 @@ body.no-hero .nav-burger span{background:var(--off-black);}
 .about-h2{font-family:var(--font-display);font-size:clamp(2.2rem,4.5vw,3.5rem);font-weight:800;line-height:1.1;color:var(--off-black);margin-bottom:1.5rem;}
 .about-h2 em{font-style:italic;color:var(--red);}
 .about-body{font-size:1rem;color:var(--mid-gray);line-height:1.8;margin-bottom:2.5rem;max-width:480px;}
+.about-body strong{color:var(--off-black);font-weight:700;}
 .about-features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:2.5rem;}
 .af-item{padding:1.4rem 1.25rem;background:var(--cream);border:1px solid var(--border-dark);border-radius:var(--radius-lg);display:flex;flex-direction:column;gap:0.35rem;transition:border-color var(--t),box-shadow var(--t),transform var(--t);}
 .af-item:hover{border-color:var(--gold);box-shadow:var(--shadow-sm);transform:translateY(-2px);}
@@ -179,6 +180,8 @@ body.no-hero .nav-burger span{background:var(--off-black);}
 /* PACKAGES */
 #packages{padding:8rem 5%;background:var(--cream);}
 .packages-header{max-width:1260px;margin:0 auto 2.5rem;text-align:center;}
+.packages-header .section-eyebrow{justify-content:center;}
+.packages-header .section-eyebrow::before{content:'';flex:1;max-width:36px;height:1px;background:var(--gold);}
 .packages-h2{font-family:var(--font-display);font-size:clamp(2rem,4vw,3rem);font-weight:800;color:var(--off-black);margin:0.5rem 0 0.75rem;}
 .packages-h2 em{font-style:italic;color:var(--red);}
 .packages-sub{font-size:0.9rem;color:var(--mid-gray);max-width:440px;margin:0 auto;line-height:1.7;}
@@ -220,6 +223,8 @@ body.no-hero .nav-burger span{background:var(--off-black);}
 .pkg-card.happy-hour{border-color:rgba(232,191,96,0.4);position:relative;}
 .pkg-card.happy-hour:hover{border-color:var(--gold);}
 .pkg-card.happy-hour .pkg-icon{background:rgba(232,191,96,0.12);border-color:rgba(232,191,96,0.4);color:var(--gold);}
+.pkg-card.happy-hour .pkg-price{font-size:2rem;color:var(--gold);}
+.special-offer-sub{font-family:var(--font-body);font-size:0.78rem;font-weight:600;color:rgba(255,255,255,0.82);letter-spacing:0.08em;text-transform:uppercase;margin-top:10px;display:block;}
 .pkg-hh-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--off-black);font-size:0.66rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;padding:5px 16px;border-radius:100px;box-shadow:var(--shadow-gold);white-space:nowrap;}
 
 /* ROOMS TEASER (homepage) + FULL ROOMS (rooms page) */
@@ -268,6 +273,9 @@ body.no-hero .nav-burger span{background:var(--off-black);}
 .faq-q{font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:var(--off-black);margin-bottom:0.5rem;display:flex;align-items:flex-start;gap:12px;}
 .faq-q::before{content:'';display:inline-block;width:18px;height:1px;background:var(--gold);margin-top:12px;flex-shrink:0;}
 .faq-a{font-size:0.92rem;color:var(--mid-gray);line-height:1.7;padding-left:30px;}
+.faq-a a{color:var(--red);font-weight:700;text-decoration:underline;text-underline-offset:2px;}
+.faq-a a:hover{color:var(--red-dark);}
+.has-page-header{padding-top:4rem;}
 @media(max-width:1024px){
   .room-features-grid{grid-template-columns:repeat(2,1fr);}
 }
@@ -404,12 +412,32 @@ textarea.form-control{resize:vertical;min-height:90px;}
 
 /* 2-col menu grid for cocktails */
 .menu-2col{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;}
-/* Beer grid */
-.beer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 3rem;}
+.menu-3col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 3rem;}
+.menu-subsection{margin-top:2.5rem;}
+/* Row with a price tagged on the right side of an ingredient-heavy item */
+.menu-row-priced{border-bottom:none;}
+.menu-row-priced-inner{display:flex;justify-content:space-between;align-items:flex-start;width:100%;}
+.menu-row-priced-amount{font-family:var(--font-display);font-size:1.1rem;font-weight:900;color:var(--gold-bright);margin-left:1rem;flex-shrink:0;}
+.menu-list-bordered-top{border-top:1px solid rgba(255,255,255,0.08);}
+.menu-cat-spaced{margin-top:2.5rem;}
+.menu-cat-tight{margin-top:2rem;}
+.jager-note{font-size:var(--text-sm);color:var(--on-dark-label);display:block;}
 /* Category sub-header */
-.menu-cat{font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-bright);margin:2rem 0 0.75rem;display:block;}
+.menu-cat{font-size:0.78rem;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-bright);margin:2.75rem 0 1.1rem;display:inline-flex;align-items:center;gap:14px;width:100%;}
+.menu-cat::before{content:'';width:10px;height:10px;border:1.5px solid var(--gold-bright);border-radius:2px;flex-shrink:0;transform:rotate(45deg);}
+.menu-cat::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(232,191,96,0.4) 0%,rgba(232,191,96,0.05) 100%);}
 .menu-cat:first-child{margin-top:0;}
-.menu-note{font-size:var(--text-sm);color:rgba(255,255,255,0.6);margin-bottom:1.5rem;font-style:italic;}
+.menu-note{font-size:var(--text-sm);color:var(--on-dark-label);margin-bottom:1.5rem;font-style:italic;}
+
+/* Reusable menu price header (e.g. "Cocktails" + "$13") */
+.menu-price-head{display:flex;align-items:baseline;justify-content:space-between;margin:2.5rem 0 0.75rem;gap:1rem;}
+.menu-price-head:first-child{margin-top:0;}
+.menu-price-head .menu-cat{margin:0;width:auto;}
+.menu-price-head .menu-cat::after{display:none;}
+.menu-price-head .menu-price-amount{font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--gold-bright);white-space:nowrap;}
+.menu-row-fine{font-weight:400;font-size:0.82rem;}
+.menu-row-chicken{align-items:flex-start;}
+.menu-row-chicken > div:first-child{flex:1;}
 /* Food grid */
 .food-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 4rem;}
 /* Chicken size table */
@@ -436,6 +464,8 @@ textarea.form-control{resize:vertical;min-height:90px;}
 .hours-time{color:var(--on-dark-strong);font-weight:600;}
 .hours-item.today-row .hours-day,.hours-item.today-row .hours-time{color:var(--gold-bright);font-weight:700;}
 .hours-note{margin-top:1.25rem;padding:1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);font-size:var(--text-sm);color:var(--on-dark-muted);line-height:1.6;}
+.hours-note strong{color:var(--on-dark-strong);font-weight:700;}
+.info-card-stacked{margin-top:16px;}
 .addr-list{list-style:none;display:flex;flex-direction:column;gap:1.25rem;}
 .addr-item{display:flex;gap:14px;align-items:flex-start;}
 .addr-icon{width:36px;height:36px;border-radius:var(--radius);background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:var(--gold-bright);flex-shrink:0;}
@@ -509,6 +539,7 @@ footer{background:var(--dark-panel);border-top:1px solid rgba(184,137,42,0.18);p
   .about-features{grid-template-columns:repeat(3,1fr);gap:10px;}
   .af-item{padding:1.1rem 1rem;}
   .af-num{font-size:1.5rem;}
+  #menu::before{font-size:18rem;top:3rem;}
   .footer-top{grid-template-columns:1fr 1fr 1fr;gap:2rem;}
   .footer-top > :first-child{grid-column:1/-1;}
   .menu-2col{grid-template-columns:1fr;}
@@ -531,7 +562,11 @@ footer{background:var(--dark-panel);border-top:1px solid rgba(184,137,42,0.18);p
   .nav-burger{display:flex;}
   .hero-h1{font-size:clamp(2.5rem,12vw,4rem);}
   .about-inner{grid-template-columns:1fr;gap:3rem;}
-  .about-features{grid-template-columns:repeat(3,1fr);}
+  .about-features{grid-template-columns:1fr;gap:12px;}
+  .af-item{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"icon num" "icon label";column-gap:16px;row-gap:2px;padding:1.15rem 1.25rem;}
+  .af-icon{grid-area:icon;margin-bottom:0;align-self:center;}
+  .af-num{grid-area:num;font-size:1.55rem;align-self:end;}
+  .af-label{grid-area:label;margin-top:0;align-self:start;}
   .about-photo-grid{grid-template-columns:1fr;}
   .about-photo-main{grid-column:1;}
   .form-grid{grid-template-columns:1fr;}

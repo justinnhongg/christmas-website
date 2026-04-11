@@ -49,7 +49,7 @@
 </section>
 
 <!-- MENU -->
-<section id="menu" style="padding-top:4rem;">
+<section id="menu" class="has-page-header">
   <div class="menu-tabs reveal">
     <button class="menu-tab-btn active" onclick="switchMenu('cocktails',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 11v11"/><path d="M19 3H5l7 8z"/></svg>House Drinks</button>
     <button class="menu-tab-btn" onclick="switchMenu('spirits',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>Spirits & Shooters</button>
@@ -59,9 +59,9 @@
 
   <!-- HOUSE COCKTAILS -->
   <div class="menu-panel active" id="mp-cocktails">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:0.5rem;">
-      <span class="menu-cat" style="margin:0;">Cocktails</span>
-      <span style="font-family:var(--font-display);font-size:1.4rem;font-weight:900;color:var(--gold-bright);">$13</span>
+    <div class="menu-price-head">
+      <span class="menu-cat">Cocktails</span>
+      <span class="menu-price-amount">$13</span>
     </div>
     <p class="menu-note">Top Shelf substitution +$3 &nbsp;·&nbsp; Long Island & Tokyo Iced Tea $16</p>
     <div class="menu-2col">
@@ -88,21 +88,21 @@
           <li class="menu-row"><div><div class="menu-row-name">(Grinch's) Baja Blast</div><span class="menu-row-ing">Vodka, Apple Pucker, Sour Mix, Sprite</span></div></li>
           <li class="menu-row"><div><div class="menu-row-name">(Santa's) Strawberry Creme</div><span class="menu-row-ing">Bailey's, Cranberry, Pineapple</span></div></li>
           <li class="menu-row"><div><div class="menu-row-name">(Frosty's) Bubblegum</div><span class="menu-row-ing">Bailey's, Banana Liquor, Blue Curaçao</span></div></li>
-          <li class="menu-row" style="border-bottom:none;"><div style="display:flex;justify-content:space-between;align-items:flex-start;width:100%;"><div><div class="menu-row-name">Long Island Iced Tea</div><span class="menu-row-ing">Vodka, Gin, Rum, Tequila, Triple Sec, Sour Mix, Coke</span></div><span style="font-family:var(--font-display);font-size:1.1rem;font-weight:900;color:var(--gold-bright);margin-left:1rem;flex-shrink:0;">$16</span></div></li>
-          <li class="menu-row" style="border-bottom:none;"><div style="display:flex;justify-content:space-between;align-items:flex-start;width:100%;"><div><div class="menu-row-name">Tokyo Iced Tea</div><span class="menu-row-ing">Vodka, Gin, Rum, Tequila, Triple Sec, Sour Mix, Midori, Sprite</span></div><span style="font-family:var(--font-display);font-size:1.1rem;font-weight:900;color:var(--gold-bright);margin-left:1rem;flex-shrink:0;">$16</span></div></li>
+          <li class="menu-row menu-row-priced"><div class="menu-row-priced-inner"><div><div class="menu-row-name">Long Island Iced Tea</div><span class="menu-row-ing">Vodka, Gin, Rum, Tequila, Triple Sec, Sour Mix, Coke</span></div><span class="menu-row-priced-amount">$16</span></div></li>
+          <li class="menu-row menu-row-priced"><div class="menu-row-priced-inner"><div><div class="menu-row-name">Tokyo Iced Tea</div><span class="menu-row-ing">Vodka, Gin, Rum, Tequila, Triple Sec, Sour Mix, Midori, Sprite</span></div><span class="menu-row-priced-amount">$16</span></div></li>
         </ul>
       </div>
     </div>
-    <div style="margin-top:2.5rem;">
+    <div class="menu-subsection">
       <span class="menu-cat">Soda & Juice</span>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;">
+      <div class="menu-2col">
         <ul class="menu-list">
           <li class="menu-row"><div class="menu-row-name">Soda</div><div class="menu-row-dots"></div><div class="menu-row-price">Glass $2.50 / Pitcher $12</div></li>
-          <li class="menu-row"><div><div class="menu-row-name" style="font-weight:400;font-size:0.82rem;">Coca-Cola · Diet Coke · Sprite · Ginger Ale</div></div></li>
+          <li class="menu-row"><div><div class="menu-row-name menu-row-fine">Coca-Cola · Diet Coke · Sprite · Ginger Ale</div></div></li>
         </ul>
         <ul class="menu-list">
           <li class="menu-row"><div class="menu-row-name">Juice</div><div class="menu-row-dots"></div><div class="menu-row-price">Glass $3.50 / Pitcher $15</div></li>
-          <li class="menu-row"><div><div class="menu-row-name" style="font-weight:400;font-size:0.82rem;">Orange · Cranberry · Pineapple</div></div></li>
+          <li class="menu-row"><div><div class="menu-row-name menu-row-fine">Orange · Cranberry · Pineapple</div></div></li>
           <li class="menu-row"><div class="menu-row-name">Red Bull</div><div class="menu-row-dots"></div><div class="menu-row-price">$6</div></li>
         </ul>
       </div>
@@ -136,7 +136,7 @@
       </tbody>
     </table>
     <span class="menu-cat">Soju — $15</span>
-    <ul class="menu-list" style="display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;">
+    <ul class="menu-list menu-2col">
       <li class="menu-row"><div class="menu-row-name">Charm 참</div></li>
       <li class="menu-row"><div class="menu-row-name">Chamisul Fresh 참이슬</div></li>
       <li class="menu-row"><div class="menu-row-name">Jinro Is Back 진로 이즈 백</div></li>
@@ -145,16 +145,16 @@
       <li class="menu-row"><div class="menu-row-name">Strawberry 딸기</div></li>
     </ul>
     <span class="menu-cat">Mocktails — $6</span>
-    <ul class="menu-list" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 3rem;">
+    <ul class="menu-list menu-3col">
       <li class="menu-row"><div class="menu-row-name">Lemonade</div></li>
       <li class="menu-row"><div class="menu-row-name">Shirley Temple</div></li>
       <li class="menu-row"><div class="menu-row-name">Sunrise</div></li>
     </ul>
-    <div style="display:flex;align-items:baseline;justify-content:space-between;margin:2.5rem 0 0.25rem;">
-      <span class="menu-cat" style="margin:0;">Shooters</span>
-      <span style="font-family:var(--font-display);font-size:1.4rem;font-weight:900;color:var(--gold-bright);">$10</span>
+    <div class="menu-price-head">
+      <span class="menu-cat">Shooters</span>
+      <span class="menu-price-amount">$10</span>
     </div>
-    <div class="menu-2col" style="margin-bottom:1.5rem;">
+    <div class="menu-2col" style="margin-top:1rem;margin-bottom:1.5rem;">
       <ul class="menu-list">
         <li class="menu-row"><div><div class="menu-row-name">Green Tea</div><span class="menu-row-ing">Whiskey, Peach Schnapps, Sour Mix</span></div></li>
         <li class="menu-row"><div><div class="menu-row-name">Lemon Drop</div><span class="menu-row-ing">Lemon, Syrup, Vodka</span></div></li>
@@ -168,8 +168,8 @@
         <li class="menu-row"><div><div class="menu-row-name">Tootsie Roll</div><span class="menu-row-ing">Orange, Kahlúa</span></div></li>
       </ul>
     </div>
-    <ul class="menu-list" style="border-top:1px solid rgba(255,255,255,0.08);">
-      <li class="menu-row"><div class="menu-row-name">Jagerbomb</div><span style="font-size:0.78rem;color:rgba(255,255,255,0.55);display:block;">Jägermeister, Red Bull</span><div class="menu-row-dots"></div><div class="menu-row-price">$12</div></li>
+    <ul class="menu-list menu-list-bordered-top">
+      <li class="menu-row"><div class="menu-row-name">Jagerbomb</div><span class="jager-note">Jägermeister, Red Bull</span><div class="menu-row-dots"></div><div class="menu-row-price">$12</div></li>
     </ul>
   </div>
 
@@ -196,8 +196,8 @@
         <li class="menu-row"><div class="menu-row-name">White Claw Mango</div><div class="menu-row-dots"></div><div class="menu-row-price">$8</div></li>
       </ul>
     </div>
-    <span class="menu-cat" style="margin-top:2.5rem;">Wine — Bottle $45</span>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;">
+    <span class="menu-cat menu-cat-spaced">Wine — Bottle $45</span>
+    <div class="menu-2col">
       <ul class="menu-list">
         <li class="menu-row"><div><div class="menu-row-name">Red Wine</div><span class="menu-row-ing">Merlot · Pinot Noir</span></div></li>
       </ul>
@@ -220,7 +220,7 @@
           <li class="menu-row"><div class="menu-row-name">Sweet Potato French Fries</div><div class="menu-row-dots"></div><div class="menu-row-price">$7.95</div></li>
           <li class="menu-row"><div class="menu-row-name">Edamame</div><div class="menu-row-dots"></div><div class="menu-row-price">$7.95</div></li>
         </ul>
-        <span class="menu-cat" style="margin-top:2rem;">마른안주 / Dried Seafood</span>
+        <span class="menu-cat menu-cat-tight">마른안주 / Dried Seafood</span>
         <ul class="menu-list">
           <li class="menu-row"><div><div class="menu-row-name">마른 오징어 & 땅콩</div><span class="menu-row-ing">Grilled Squid and Peanuts</span></div><div class="menu-row-dots"></div><div class="menu-row-price">$29.95</div></li>
           <li class="menu-row"><div><div class="menu-row-name">쥐포구이</div><span class="menu-row-ing">Grilled Fish Jerky</span></div><div class="menu-row-dots"></div><div class="menu-row-price">$25.95</div></li>
@@ -229,16 +229,16 @@
       <div>
         <span class="menu-cat">Chicken</span>
         <ul class="menu-list">
-          <li class="menu-row" style="align-items:flex-start;">
-            <div style="flex:1;"><div class="menu-row-name">Chicken Poppers</div></div>
+          <li class="menu-row menu-row-chicken">
+            <div><div class="menu-row-name">Chicken Poppers</div></div>
             <div class="chicken-sizes">
               <div class="chicken-size"><span class="chicken-size-label">Sm</span><span>$19.95</span></div>
               <div class="chicken-size"><span class="chicken-size-label">Md</span><span>$27.95</span></div>
               <div class="chicken-size"><span class="chicken-size-label">Lg</span><span>$35.95</span></div>
             </div>
           </li>
-          <li class="menu-row" style="align-items:flex-start;">
-            <div style="flex:1;"><div class="menu-row-name">Snowing Poppers</div><span class="menu-row-ing">White cheese, onion & garlic powder coating</span></div>
+          <li class="menu-row menu-row-chicken">
+            <div><div class="menu-row-name">Snowing Poppers</div><span class="menu-row-ing">White cheese, onion & garlic powder coating</span></div>
             <div class="chicken-sizes">
               <div class="chicken-size"><span class="chicken-size-label">Sm</span><span>$21.95</span></div>
               <div class="chicken-size"><span class="chicken-size-label">Md</span><span>$29.95</span></div>
@@ -246,7 +246,7 @@
             </div>
           </li>
         </ul>
-        <span class="menu-cat" style="margin-top:2rem;">Dessert</span>
+        <span class="menu-cat menu-cat-tight">Dessert</span>
         <ul class="menu-list">
           <li class="menu-row"><div class="menu-row-name">Fried Oreos</div><div class="menu-row-dots"></div><div class="menu-row-price">$8.95</div></li>
         </ul>
@@ -264,8 +264,8 @@
         <p class="footer-tagline">47-29 Bell Blvd, Bayside NY 11361 · 718-224-2434 · Your stage. Your night. No judgment.</p>
         <div class="footer-socials">
           <a href="https://instagram.com/christmas_karaoke" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-          <a href="#" class="social-link" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
-          <a href="#" class="social-link" aria-label="Yelp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></a>
+          <a href="https://www.google.com/search?q=christmas+karaoke+bayside" target="_blank" rel="noopener" class="social-link" aria-label="Google reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></a>
+          <a href="https://www.yelp.com/search?find_desc=christmas+karaoke&find_loc=bayside+ny" target="_blank" rel="noopener" class="social-link" aria-label="Yelp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></a>
         </div>
       </div>
       <div class="footer-col"><h5>Explore</h5><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Private Rooms</a></li><li><a href="menu.html">Food & Drinks</a></li><li><a href="visit.html">Visit Us</a></li><li><a href="index.html#specials">Daily Specials</a></li><li><a href="index.html#packages">Packages</a></li></ul></div>

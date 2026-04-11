@@ -4,8 +4,20 @@ if(nav) window.addEventListener('scroll', () => nav.classList.toggle('scrolled',
 
 // Nav drawer
 let navOpen = false;
-function toggleNav(){ navOpen=!navOpen; document.getElementById('nav-drawer').classList.toggle('open',navOpen); }
-function closeNav(){ navOpen=false; document.getElementById('nav-drawer').classList.remove('open'); }
+function setBurgerExpanded(val){
+  const burger = document.querySelector('.nav-burger');
+  if(burger) burger.setAttribute('aria-expanded', val ? 'true' : 'false');
+}
+function toggleNav(){
+  navOpen=!navOpen;
+  document.getElementById('nav-drawer').classList.toggle('open',navOpen);
+  setBurgerExpanded(navOpen);
+}
+function closeNav(){
+  navOpen=false;
+  document.getElementById('nav-drawer').classList.remove('open');
+  setBurgerExpanded(false);
+}
 
 // Reveal on scroll
 const obs = new IntersectionObserver(entries => {
