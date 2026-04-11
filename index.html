@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christmas Karaoke NYC | Private Karaoke Rooms | Bayside, Queens</title>
+<meta name="description" content="NYC's largest karaoke bar with private rooms. 47-29 Bell Blvd, Bayside NY. Open late every night. Book online or call 718-224-2434.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.karaokexmas.com">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e8bf60' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='2' width='6' height='12' rx='3'/%3E%3Cpath d='M19 10v2a7 7 0 0 1-14 0v-2'/%3E%3Cline x1='12' x2='12' y1='19' y2='22'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NightClub","name":"Christmas Karaoke NYC","url":"https://www.karaokexmas.com","description":"NYC's largest karaoke bar with private rooms for groups of all sizes.","address":{"@type":"PostalAddress","streetAddress":"47-29 Bell Blvd","addressLocality":"Bayside","addressRegion":"NY","postalCode":"11361","addressCountry":"US"},"telephone":"+17182242434","priceRange":"$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"800"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,800;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></div>
+      <div><span class="nav-logo-top">Christmas Karaoke</span><span class="nav-logo-sub">Bayside, New York</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="visit.html">Visit</a></li>
+    </ul>
+    <div class="nav-book"><a href="#booking" class="btn btn-red">Book a Room</a></div>
+    <button class="nav-burger" onclick="toggleNav()" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html" onclick="closeNav()">Home</a>
+  <a href="rooms.html" onclick="closeNav()">Rooms</a>
+  <a href="menu.html" onclick="closeNav()">Menu</a>
+  <a href="visit.html" onclick="closeNav()">Visit</a>
+  <a href="#booking" onclick="closeNav()" class="drawer-book">Book a Room →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-ambient"></div>
+  <div class="hero-texture"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-year-round"><strong>Open year-round</strong> — "Christmas" is the name, not the season</div>
+      <h1 class="hero-h1">Your Night.<br>Your <em>Stage.</em><br>Your Room.</h1>
+      <p class="hero-sub">Private rooms. Full bar. 100,000+ songs. Open late, every night.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-red btn-lg">Book a Room →</a>
+        <a href="tel:+17182242434" class="btn btn-outline-white"><svg class="icon" style="width:16px;height:16px;" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>718-224-2434</a>
+      </div>
+      <div class="hero-tonight" id="hero-tonight">
+        <span class="hero-tonight-dot"></span>
+        <div><span class="hero-tonight-label">Tonight</span></div>
+        <div class="hero-tonight-sep"></div>
+        <span class="hero-tonight-time" id="hero-tonight-time">6:00 PM – 2:00 AM</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Open tonight</span><span class="marquee-item">Walk-ins welcome</span><span class="marquee-item">100,000+ songs</span><span class="marquee-item">20+ private rooms</span><span class="marquee-item">Full bar</span><span class="marquee-item">Birthdays · Bachelorettes · Corporate</span><span class="marquee-item">Open 'til 4am Fri & Sat</span><span class="marquee-item">Bayside, Queens NY</span><span class="marquee-item">Book 718-224-2434</span><span class="marquee-item">Open tonight</span><span class="marquee-item">Walk-ins welcome</span><span class="marquee-item">100,000+ songs</span><span class="marquee-item">20+ private rooms</span><span class="marquee-item">Full bar</span><span class="marquee-item">Birthdays · Bachelorettes · Corporate</span><span class="marquee-item">Open 'til 4am Fri & Sat</span><span class="marquee-item">Bayside, Queens NY</span><span class="marquee-item">Book 718-224-2434</span>
+  </div>
+</div>
+
+<!-- DAILY SPECIALS -->
+<section id="specials">
+  <div class="specials-header container">
+    <p class="section-eyebrow reveal">Every Day of the Week</p>
+    <h2 class="specials-h2 reveal d1">Every night, a <em>reason</em>.</h2>
+  </div>
+  <div class="specials-grid container">
+    <div class="special-card reveal" data-day="1">
+      <div class="special-card-img"><img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=400&q=75" alt="Karaoke" loading="lazy"></div>
+      <div class="special-card-body"><span class="special-tag">Tonight</span><div class="special-day">Monday</div><div class="special-offer">All You Can Sing Unlimited Karaoke — $25/Person</div></div>
+    </div>
+    <div class="special-card reveal d1" data-day="2">
+      <div class="special-card-img"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=400&q=75" alt="Drinks" loading="lazy"></div>
+      <div class="special-card-body"><span class="special-tag">Tonight</span><div class="special-day">Tuesday</div><div class="special-offer">Buy 1 Get 1 Free Drink</div></div>
+    </div>
+    <div class="special-card reveal d2" data-day="3">
+      <div class="special-card-img"><img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=400&q=75" alt="Mixed drinks" loading="lazy"></div>
+      <div class="special-card-body"><span class="special-tag">Tonight</span><div class="special-day">Wednesday</div><div class="special-offer">$7 Mixed Well Drinks</div></div>
+    </div>
+    <div class="special-card reveal d1" data-day="4">
+      <div class="special-card-img"><img src="https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?auto=format&fit=crop&w=400&q=75" alt="Karaoke room" loading="lazy"></div>
+      <div class="special-card-body"><span class="special-tag">Tonight</span><div class="special-day">Thursday</div><div class="special-offer">20% OFF All Private Karaoke Rooms</div></div>
+    </div>
+    <div class="special-card reveal d2" data-day="5">
+      <div class="special-card-img"><img src="https://images.unsplash.com/photo-1559628233-100c798642b8?auto=format&fit=crop&w=400&q=75" alt="Shots" loading="lazy"></div>
+      <div class="special-card-body"><span class="special-tag">Tonight</span><div class="special-day">Friday</div><div class="special-offer">$5 House Shots All Day</div></div>
+    </div>
+    <div class="special-card no-special reveal d3" data-day="6">
+      <div class="special-card-body"><span class="special-tag">Tonight</span><div class="special-day">Saturday</div><div class="special-offer">Prime Time<br><span style="font-family:var(--font-body);font-size:0.72rem;font-weight:600;color:rgba(255,255,255,0.72);letter-spacing:0.08em;text-transform:uppercase;margin-top:8px;display:block;">Full price · Reserve early</span></div></div>
+    </div>
+    <div class="special-card reveal" data-day="0">
+      <div class="special-card-img"><img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=75" alt="Beer" loading="lazy"></div>
+      <div class="special-card-body"><span class="special-tag">Tonight</span><div class="special-day">Sunday</div><div class="special-offer">$5 Bottled Beers All Day</div></div>
+    </div>
+    <div class="special-card no-special reveal d1" style="display:flex;align-items:center;justify-content:center;text-align:center;padding:1.5rem;">
+      <div class="special-card-body" style="justify-content:center;align-items:center;">
+        <div class="special-day" style="color:rgba(255,255,255,0.55);">Plus</div>
+        <div class="special-offer" style="font-size:0.92rem;line-height:1.35;">Happy Hour<br><span style="font-family:var(--font-body);font-size:0.68rem;font-weight:600;color:rgba(232,191,96,0.72);letter-spacing:0.1em;text-transform:uppercase;margin-top:8px;display:block;">40% off, opening – 8pm</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="packages-header">
+    <p class="section-eyebrow reveal" style="justify-content:center;">Four Packages</p>
+    <h2 class="packages-h2 reveal d1">Pick your <em>poison.</em></h2>
+    <p class="packages-sub reveal d2">Room's included. Bring your crew, we handle the rest.</p>
+  </div>
+  <div class="packages-grid tier-grid">
+    <div class="pkg-card reveal">
+      <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>
+      <span class="pkg-tier">Starter</span>
+      <div class="pkg-name">Bronze</div>
+      <div class="pkg-desc">The perfect starter — great for a quick night or a date.</div>
+      <div class="pkg-price"><sup>$</sup>25<small>/person</small></div>
+      <ul class="pkg-feat"><li>1 Hour Karaoke</li><li>Any 1 House Drink</li><li>1 Any Shot</li></ul>
+      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Bronze – $25/person', event)">Book a Room</a>
+    </div>
+    <div class="pkg-card reveal d1">
+      <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg></span>
+      <span class="pkg-tier">Social</span>
+      <div class="pkg-name">Silver</div>
+      <div class="pkg-desc">An hour of singing with a proper round of drinks for the group.</div>
+      <div class="pkg-price"><sup>$</sup>35<small>/person</small></div>
+      <ul class="pkg-feat"><li>1 Hour Karaoke</li><li>2 Rounds of Drinks</li><li>1 Any Shot</li></ul>
+      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Silver – $35/person', event)">Book a Room</a>
+    </div>
+    <div class="pkg-card featured reveal d2">
+      <div class="pkg-popular">Most Popular</div>
+      <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>
+      <span class="pkg-tier">Crowd Favorite</span>
+      <div class="pkg-name">Gold</div>
+      <div class="pkg-desc">Two full hours with drinks flowing all night.</div>
+      <div class="pkg-price"><sup>$</sup>45<small>/person</small></div>
+      <ul class="pkg-feat"><li>2 Hours Karaoke</li><li>3 Rounds of Drinks</li><li>1 Any Shot</li></ul>
+      <a href="#booking" class="btn btn-gold" onclick="selectPackage('Gold – $45/person', event)">Book a Room</a>
+    </div>
+    <div class="pkg-card reveal d3">
+      <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg></span>
+      <span class="pkg-tier">All Night</span>
+      <div class="pkg-name">Platinum</div>
+      <div class="pkg-desc">Three hours, three rounds — the full night experience.</div>
+      <div class="pkg-price"><sup>$</sup>55<small>/person</small></div>
+      <ul class="pkg-feat"><li>3 Hours Karaoke</li><li>3 Rounds of Drinks</li><li>1 Any Shot</li></ul>
+      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Platinum – $55/person', event)">Book a Room</a>
+    </div>
+  </div>
+  <div class="special-offers-head reveal"><span>Also Available</span></div>
+  <div class="special-offers-grid">
+    <div class="pkg-card couples reveal">
+      <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
+      <div class="pkg-name">Couples</div>
+      <div class="pkg-desc">Two hours of karaoke, a bottle of wine, and a shot each. Date night sorted.</div>
+      <div class="pkg-price"><sup>$</sup>75<small>/couple</small></div>
+      <ul class="pkg-feat"><li>2 Hours Karaoke</li><li>1 Bottle of Wine</li><li>1 Any Shot Each</li></ul>
+      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Couples – $75/couple', event)">Book a Room</a>
+    </div>
+    <div class="pkg-card happy-hour reveal d1">
+      <div class="pkg-hh-badge">40% OFF</div>
+      <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+      <div class="pkg-name">Happy Hour</div>
+      <div class="pkg-desc">Come in early and save big. No package required.</div>
+      <div class="pkg-price" style="font-size:2rem;color:var(--gold);">40% Off</div>
+      <div class="pkg-price-note">Karaoke room rate</div>
+      <ul class="pkg-feat">
+        <li>From opening until 8PM</li>
+        <li>Every day of the week</li>
+        <li>Walk-ins welcome</li>
+      </ul>
+      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Happy Hour (40% off, open–8PM)', event)">Book a Room</a>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS TEASER (condensed) -->
+<section id="rooms">
+  <div class="rooms-header">
+    <p class="section-eyebrow reveal">47-29 Bell Blvd</p>
+    <h2 class="rooms-h2 reveal d1">Step <em>inside.</em></h2>
+  </div>
+  <div class="rooms-grid">
+    <div class="room-photo reveal"><span class="room-photo-num">01 / 06</span><div class="room-photo-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg></div></div>
+    <div class="room-photo reveal d1"><span class="room-photo-num">02 / 06</span><div class="room-photo-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg></div></div>
+    <div class="room-photo reveal d2"><span class="room-photo-num">03 / 06</span><div class="room-photo-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg></div></div>
+  </div>
+  <div class="rooms-footer reveal d3"><a href="rooms.html" class="btn btn-outline">See all 6 rooms →</a></div>
+</section>
+
+<!-- REVIEWS (3 max) -->
+<section id="reviews">
+  <div class="reviews-header">
+    <p class="section-eyebrow reveal">800+ Reviews</p>
+    <h2 class="reviews-h2 reveal d1">What people <em>actually</em> say.</h2>
+    <div class="reviews-agg-inline reveal d2"><span class="stars">★★★★★</span> <strong>4.8</strong> across <a href="https://www.google.com/search?q=christmas+karaoke+bayside" target="_blank" rel="noopener">Google</a> & <a href="https://www.yelp.com/search?find_desc=christmas+karaoke&find_loc=bayside+ny" target="_blank" rel="noopener">Yelp</a></div>
+  </div>
+  <div class="reviews-grid container">
+    <div class="review-card reveal"><div class="review-stars">★★★★★</div><p class="review-text">"Best karaoke in NYC, no contest. We had 15 people for a birthday and the room was massive. Staff was super helpful and the song selection is insane."</p><p class="review-source-line"><strong>Jessica T.</strong> · Yelp · Birthday Party</p></div>
+    <div class="review-card reveal d1"><div class="review-stars">★★★★★</div><p class="review-text">"Came here for my bachelorette and it was the perfect night. Private room had great vibes, drinks came fast, everyone had the time of their lives."</p><p class="review-source-line"><strong>Michelle K.</strong> · Google</p></div>
+    <div class="review-card reveal d2"><div class="review-stars">★★★★☆</div><p class="review-text">"Solid vibes, K-pop selection is killer, drinks a little pricey but that's NYC. Showed up at 11pm on a Friday and still got fit in. Will come back."</p><p class="review-source-line"><strong>David L.</strong> · Yelp · Friday Night</p></div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="booking-inner">
+    <div>
+      <p class="section-eyebrow reveal">Reservations</p>
+      <h2 class="booking-h2 reveal d1">Lock In Your <em>Night</em></h2>
+      <p class="booking-body reveal d2">Rooms fill up fast — especially on weekends. Fill out the form and we'll confirm your spot within 2 hours. Walk-ins always welcome too.</p>
+      <div class="booking-perks reveal d3">
+        <div class="perk-item"><div class="perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div><div class="perk-text">Fast Confirmation</div><span class="perk-sub">We reply within 2 hours, usually sooner</span></div></div>
+        <div class="perk-item"><div class="perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div><div><div class="perk-text">Special Occasions Welcome</div><span class="perk-sub">Birthdays, bachelorettes, corporate — we do it all</span></div></div>
+        <div class="perk-item"><div class="perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><div><div class="perk-text">Song Requests Welcome</div><span class="perk-sub">Send us your playlist — we'll queue it up</span></div></div>
+      </div>
+      <a href="tel:+17182242434" class="phone-cta reveal d4"><span class="pc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><div class="pc-label">Prefer to call?</div><div class="pc-num">718-224-2434</div></div></a>
+    </div>
+    <div class="booking-form reveal d2">
+      <div class="form-title">Reserve a Room</div>
+      <div class="form-pkg-banner" id="form-pkg-banner"><span>✦</span><span id="form-pkg-text"></span></div>
+      <div class="form-group-head">WHO'S COMING</div>
+      <div class="form-grid">
+        <div class="form-group"><label class="form-label" for="f-name">Your Name</label><input class="form-control" type="text" id="f-name" placeholder="First & Last Name"></div>
+        <div class="form-group"><label class="form-label" for="f-phone">Phone Number</label><input class="form-control" type="tel" id="f-phone" placeholder="(212) 000-0000"></div>
+        <div class="form-group form-full"><label class="form-label" for="f-email">Email Address</label><input class="form-control" type="email" id="f-email" placeholder="you@email.com"></div>
+      </div>
+      <div class="form-group-head">WHEN & HOW MANY</div>
+      <div class="form-grid">
+        <div class="form-group"><label class="form-label" for="f-date">Date</label><input class="form-control" type="date" id="f-date"></div>
+        <div class="form-group"><label class="form-label" for="f-time">Preferred Time</label><select class="form-control" id="f-time"><option value="">Select a time</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option><option>11:00 PM</option><option>12:00 AM</option><option>1:00 AM</option></select></div>
+        <div class="form-group form-full"><label class="form-label" for="f-guests">Guest Count</label><select class="form-control" id="f-guests"><option value="">How many people?</option><option>2 – 6 guests</option><option>6 – 12 guests</option><option>12 – 20 guests</option><option>20 – 30 guests</option><option>30+ guests</option></select></div>
+      </div>
+      <div class="form-group-head">THE NIGHT</div>
+      <div class="form-grid">
+        <div class="form-group"><label class="form-label" for="f-package">Package</label>
+          <select class="form-control" id="f-package">
+            <option value="">Select a package</option>
+            <option value="Bronze – $25/person">Bronze – $25/person</option>
+            <option value="Silver – $35/person">Silver – $35/person</option>
+            <option value="Gold – $45/person">Gold – $45/person (Most Popular)</option>
+            <option value="Platinum – $55/person">Platinum – $55/person</option>
+            <option value="Couples – $75/couple">Couples – $75/couple</option>
+            <option value="Happy Hour (40% off, open–8PM)">Happy Hour – 40% off</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label" for="f-occasion">Occasion</label><select class="form-control" id="f-occasion"><option value="">Select occasion</option><option>Birthday Party</option><option>Date Night</option><option>Friend Hangout</option><option>Bachelorette / Bachelor</option><option>Corporate Event</option><option>Anniversary</option><option>No occasion, just vibes</option><option>Other</option></select></div>
+      </div>
+      <button type="button" class="form-notes-toggle" id="form-notes-toggle" onclick="toggleNotes()">+ Add a note (decorations, dietary, song requests, etc.)</button>
+      <div class="form-notes-wrap" id="form-notes-wrap">
+        <label class="form-label" for="f-notes">Special Requests</label>
+        <textarea class="form-control" id="f-notes" placeholder="Decorations, dietary needs, song requests, anything else..."></textarea>
+      </div>
+      <button class="form-submit" id="form-submit-btn" onclick="submitForm()">Send Request →</button>
+      <div class="form-success" id="form-success">
+        <div class="form-success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div><div class="form-success-title">Request sent.</div><div class="form-success-sub">We'll confirm within 2 hours. Usually sooner.</div></div>
+      </div>
+      <p class="form-note">We'll reach out within 2 hours to confirm. Questions? Call 718-224-2434.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-logo"><div class="footer-brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></div><div class="footer-brand-name">Christmas Karaoke NYC</div></div>
+        <p class="footer-tagline">47-29 Bell Blvd, Bayside NY 11361 · 718-224-2434 · Your stage. Your night. No judgment.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/christmas_karaoke" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-link" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+          <a href="#" class="social-link" aria-label="Yelp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Explore</h5><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Private Rooms</a></li><li><a href="menu.html">Food & Drinks</a></li><li><a href="visit.html">Visit Us</a></li><li><a href="#specials">Daily Specials</a></li><li><a href="#packages">Packages</a></li></ul></div>
+      <div class="footer-col"><h5>Visit</h5><ul><li><a href="tel:+17182242434">718-224-2434</a></li><li><a href="visit.html">Hours & Location</a></li><li><a href="https://www.karaokexmas.com">karaokexmas.com</a></li><li><a href="https://instagram.com/christmas_karaoke">@christmas_karaoke</a></li></ul></div>
+      <div class="footer-col"><h5>Hours</h5><ul class="footer-hours"><li><span>Mon – Thu</span><strong>6pm – 2am</strong></li><li><span>Fri</span><strong>5pm – 4am</strong></li><li><span>Sat</span><strong>5pm – 4am</strong></li><li><span>Sun</span><strong>5pm – 2am</strong></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span id="footer-year">2026</span> Christmas Karaoke NYC · 47-29 Bell Blvd, Bayside NY 11361</p>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta">
+  <div class="sticky-cta-progress" id="sticky-cta-progress"></div>
+  <a href="tel:+17182242434" class="sc-call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+  <a href="#booking" class="sc-book">Book a Room →</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
