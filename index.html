@@ -30,6 +30,7 @@
       <li><a href="rooms.html">Rooms</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="visit.html">Visit</a></li>
+      <li><a href="https://playboxkaraoke.com/search/" target="_blank" rel="noopener">Song Search</a></li>
     </ul>
     <div class="nav-book"><a href="#booking" class="btn btn-red">Book a Room</a></div>
     <button class="nav-burger" onclick="toggleNav()" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -40,6 +41,7 @@
   <a href="rooms.html" onclick="closeNav()">Rooms</a>
   <a href="menu.html" onclick="closeNav()">Menu</a>
   <a href="visit.html" onclick="closeNav()">Visit</a>
+  <a href="https://playboxkaraoke.com/search/" target="_blank" rel="noopener" onclick="closeNav()">Song Search</a>
   <a href="#booking" onclick="closeNav()" class="drawer-book">Book a Room →</a>
 </div>
 
@@ -60,7 +62,7 @@
         <span class="hero-tonight-dot"></span>
         <div><span class="hero-tonight-label">Tonight</span></div>
         <div class="hero-tonight-sep"></div>
-        <span class="hero-tonight-time" id="hero-tonight-time">6:00 PM – 2:00 AM</span>
+        <span class="hero-tonight-time" id="hero-tonight-time">4:00 PM – 4:00 AM</span>
       </div>
     </div>
   </div>
@@ -69,7 +71,7 @@
 <!-- MARQUEE -->
 <div class="marquee-wrap" aria-hidden="true">
   <div class="marquee-track">
-    <span class="marquee-item">Open tonight</span><span class="marquee-item">Walk-ins welcome</span><span class="marquee-item">100,000+ songs</span><span class="marquee-item">20+ private rooms</span><span class="marquee-item">Full bar</span><span class="marquee-item">Birthdays · Bachelorettes · Corporate</span><span class="marquee-item">Open 'til 4am Fri & Sat</span><span class="marquee-item">Bayside, Queens NY</span><span class="marquee-item">Book 718-224-2434</span><span class="marquee-item">Open tonight</span><span class="marquee-item">Walk-ins welcome</span><span class="marquee-item">100,000+ songs</span><span class="marquee-item">20+ private rooms</span><span class="marquee-item">Full bar</span><span class="marquee-item">Birthdays · Bachelorettes · Corporate</span><span class="marquee-item">Open 'til 4am Fri & Sat</span><span class="marquee-item">Bayside, Queens NY</span><span class="marquee-item">Book 718-224-2434</span>
+    <span class="marquee-item">Open tonight</span><span class="marquee-item">Walk-ins welcome</span><span class="marquee-item">100,000+ songs</span><span class="marquee-item">20+ private rooms</span><span class="marquee-item">Full bar</span><span class="marquee-item">Birthdays · Bachelorettes · Corporate</span><span class="marquee-item">Open 'til 4am every night</span><span class="marquee-item">Bayside, Queens NY</span><span class="marquee-item">Book 718-224-2434</span><span class="marquee-item">Open tonight</span><span class="marquee-item">Walk-ins welcome</span><span class="marquee-item">100,000+ songs</span><span class="marquee-item">20+ private rooms</span><span class="marquee-item">Full bar</span><span class="marquee-item">Birthdays · Bachelorettes · Corporate</span><span class="marquee-item">Open 'til 4am every night</span><span class="marquee-item">Bayside, Queens NY</span><span class="marquee-item">Book 718-224-2434</span>
   </div>
 </div>
 
@@ -97,7 +99,7 @@
       <div class="special-card-body"><span class="special-tag">Tonight</span><div class="special-main"><div class="special-day">Thursday</div><div class="special-offer">20% OFF All Private Karaoke Rooms</div></div><a href="#booking" class="today-cta">Book tonight →</a></div>
     </div>
     <div class="special-card reveal d2" data-day="5">
-      <div class="special-card-img"><img src="https://images.unsplash.com/photo-1559628233-100c798642b8?auto=format&fit=crop&w=400&q=75" alt="Shots" loading="lazy"></div>
+      <div class="special-card-img"><img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=400&q=75" alt="Shots" loading="lazy"></div>
       <div class="special-card-body"><span class="special-tag">Tonight</span><div class="special-main"><div class="special-day">Friday</div><div class="special-offer">$5 House Shots All Day</div></div><a href="#booking" class="today-cta">Book tonight →</a></div>
     </div>
     <div class="special-card reveal d3" data-day="6">
@@ -116,47 +118,50 @@
   <div class="packages-header">
     <p class="section-eyebrow reveal">Four Packages</p>
     <h2 class="packages-h2 reveal d1">Pick your <em>poison.</em></h2>
-    <p class="packages-sub reveal d2">Room's included. Bring your crew, we handle the rest.</p>
+  </div>
+  <div class="packages-tldr reveal d2">
+    <p>Four tiers. <em>Same private room.</em> Pick how much night you want.<span class="packages-tldr-sub">Every package includes a room · Drinks scale with the tier · Book in 2 minutes</span></p>
   </div>
   <div class="packages-grid tier-grid">
     <div class="pkg-card reveal">
       <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>
       <span class="pkg-tier">Starter</span>
       <div class="pkg-name">Bronze</div>
-      <div class="pkg-desc">The perfect starter — great for a quick night or a date.</div>
-      <div class="pkg-price"><sup>$</sup>25<small>/person</small></div>
-      <ul class="pkg-feat"><li>1 Hour Karaoke</li><li>Any 1 House Drink</li><li>1 Any Shot</li></ul>
-      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Bronze – $25/person', event)">Book a Room</a>
+      <div class="pkg-desc">Quick night or a date — one hour, two drinks, one shot.</div>
+      <div class="pkg-price"><sup>$</sup>35<small>/person</small></div>
+      <ul class="pkg-feat"><li>1 Hour Karaoke</li><li>2 House Drinks</li><li>1 Shot</li></ul>
+      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Bronze – $35/person', event)">Book a Room</a>
     </div>
     <div class="pkg-card reveal d1">
       <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg></span>
       <span class="pkg-tier">Social</span>
       <div class="pkg-name">Silver</div>
-      <div class="pkg-desc">An hour of singing with a proper round of drinks for the group.</div>
-      <div class="pkg-price"><sup>$</sup>35<small>/person</small></div>
-      <ul class="pkg-feat"><li>1 Hour Karaoke</li><li>2 Rounds of Drinks</li><li>1 Any Shot</li></ul>
-      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Silver – $35/person', event)">Book a Room</a>
+      <div class="pkg-desc">Two hours with the crew. Three drinks, one shot, no rush.</div>
+      <div class="pkg-price"><sup>$</sup>55<small>/person</small></div>
+      <ul class="pkg-feat"><li>2 Hours Karaoke</li><li>3 House Drinks</li><li>1 Shot</li></ul>
+      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Silver – $55/person', event)">Book a Room</a>
     </div>
     <div class="pkg-card featured reveal d2">
       <div class="pkg-popular">Most Popular</div>
       <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>
       <span class="pkg-tier">Crowd Favorite</span>
       <div class="pkg-name">Gold</div>
-      <div class="pkg-desc">Two full hours with drinks flowing all night.</div>
-      <div class="pkg-price"><sup>$</sup>45<small>/person</small></div>
-      <ul class="pkg-feat"><li>2 Hours Karaoke</li><li>3 Rounds of Drinks</li><li>1 Any Shot</li></ul>
-      <a href="#booking" class="btn btn-gold" onclick="selectPackage('Gold – $45/person', event)">Book a Room</a>
+      <div class="pkg-desc">Three full hours, three drinks, and two shots. The sweet spot.</div>
+      <div class="pkg-price"><sup>$</sup>65<small>/person</small></div>
+      <ul class="pkg-feat"><li>3 Hours Karaoke</li><li>3 House Drinks</li><li>2 Shots</li></ul>
+      <a href="#booking" class="btn btn-gold" onclick="selectPackage('Gold – $65/person', event)">Book a Room</a>
     </div>
     <div class="pkg-card reveal d3">
       <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg></span>
       <span class="pkg-tier">All Night</span>
       <div class="pkg-name">Platinum</div>
-      <div class="pkg-desc">Three hours, three rounds — the full night experience.</div>
-      <div class="pkg-price"><sup>$</sup>55<small>/person</small></div>
-      <ul class="pkg-feat"><li>3 Hours Karaoke</li><li>3 Rounds of Drinks</li><li>1 Any Shot</li></ul>
-      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Platinum – $55/person', event)">Book a Room</a>
+      <div class="pkg-desc">Three hours, any three drinks, two shots of any liquor. The full send.</div>
+      <div class="pkg-price"><sup>$</sup>75<small>/person</small></div>
+      <ul class="pkg-feat"><li>3 Hours Karaoke</li><li>Any 3 Drinks</li><li>2 Shots · Any Liquor</li></ul>
+      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Platinum – $75/person', event)">Book a Room</a>
     </div>
   </div>
+  <p style="max-width:900px;margin:1.5rem auto 0;text-align:center;font-size:0.78rem;color:var(--mid-gray);line-height:1.6;">House drinks include all cocktails, beer, and mixed drinks. <strong style="color:var(--off-black);">Soju, wine, and premium liquor +$3/drink.</strong></p>
   <div class="special-offers-head reveal"><span>Also Available</span></div>
   <div class="special-offers-grid">
     <div class="pkg-card couples reveal">
@@ -168,18 +173,18 @@
       <a href="#booking" class="btn btn-outline" onclick="selectPackage('Couples – $75/couple', event)">Book a Room</a>
     </div>
     <div class="pkg-card happy-hour reveal d1">
-      <div class="pkg-hh-badge">40% OFF</div>
+      <div class="pkg-hh-badge">SAVE 40%</div>
       <span class="pkg-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
       <div class="pkg-name">Happy Hour</div>
-      <div class="pkg-desc">Come in early and save big. No package required.</div>
-      <div class="pkg-price">40% Off</div>
-      <div class="pkg-price-note">Karaoke room rate</div>
+      <div class="pkg-desc">Come in early and save big. No package required — just the room rate.</div>
+      <div class="pkg-price"><sup>$</sup>6<small>/person/hr</small></div>
+      <div class="pkg-price-note">Until 8PM · Every day of the week</div>
       <ul class="pkg-feat">
-        <li>From opening until 8PM</li>
-        <li>Every day of the week</li>
+        <li>$6/person/hr (reg. $10)</li>
         <li>Walk-ins welcome</li>
+        <li>1 hour minimum</li>
       </ul>
-      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Happy Hour (40% off, open–8PM)', event)">Book a Room</a>
+      <a href="#booking" class="btn btn-outline" onclick="selectPackage('Happy Hour ($6/person/hr, until 8PM)', event)">Book a Room</a>
     </div>
   </div>
 </section>
@@ -238,7 +243,7 @@
       <div class="form-group-head">WHEN & HOW MANY</div>
       <div class="form-grid">
         <div class="form-group"><label class="form-label" for="f-date">Date</label><input class="form-control" type="date" id="f-date"></div>
-        <div class="form-group"><label class="form-label" for="f-time">Preferred Time</label><select class="form-control" id="f-time"><option value="">Select a time</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option><option>11:00 PM</option><option>12:00 AM</option><option>1:00 AM</option></select></div>
+        <div class="form-group"><label class="form-label" for="f-time">Preferred Time</label><select class="form-control" id="f-time"><option value="">Select a time</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option><option>11:00 PM</option><option>12:00 AM</option><option>1:00 AM</option><option>2:00 AM</option><option>3:00 AM</option></select></div>
         <div class="form-group form-full"><label class="form-label" for="f-guests">Guest Count</label><select class="form-control" id="f-guests"><option value="">How many people?</option><option>2 – 6 guests</option><option>6 – 12 guests</option><option>12 – 20 guests</option><option>20 – 30 guests</option><option>30+ guests</option></select></div>
       </div>
       <div class="form-group-head">THE NIGHT</div>
@@ -246,12 +251,12 @@
         <div class="form-group"><label class="form-label" for="f-package">Package</label>
           <select class="form-control" id="f-package">
             <option value="">Select a package</option>
-            <option value="Bronze – $25/person">Bronze – $25/person</option>
-            <option value="Silver – $35/person">Silver – $35/person</option>
-            <option value="Gold – $45/person">Gold – $45/person (Most Popular)</option>
-            <option value="Platinum – $55/person">Platinum – $55/person</option>
+            <option value="Bronze – $35/person">Bronze – $35/person</option>
+            <option value="Silver – $55/person">Silver – $55/person</option>
+            <option value="Gold – $65/person">Gold – $65/person (Most Popular)</option>
+            <option value="Platinum – $75/person">Platinum – $75/person</option>
             <option value="Couples – $75/couple">Couples – $75/couple</option>
-            <option value="Happy Hour (40% off, open–8PM)">Happy Hour – 40% off</option>
+            <option value="Happy Hour ($6/person/hr, until 8PM)">Happy Hour – $6/person/hr</option>
           </select>
         </div>
         <div class="form-group"><label class="form-label" for="f-occasion">Occasion</label><select class="form-control" id="f-occasion"><option value="">Select occasion</option><option>Birthday Party</option><option>Date Night</option><option>Friend Hangout</option><option>Bachelorette / Bachelor</option><option>Corporate Event</option><option>Anniversary</option><option>No occasion, just vibes</option><option>Other</option></select></div>
@@ -267,6 +272,10 @@
         <div><div class="form-success-title">Request sent.</div><div class="form-success-sub">We'll confirm within 2 hours. Usually sooner.</div></div>
       </div>
       <p class="form-note">We'll reach out within 2 hours to confirm. Questions? Call 718-224-2434.</p>
+      <div style="margin-top:1.25rem;padding:1rem 1.25rem;background:var(--cream);border:1px solid var(--border-dark);border-radius:var(--radius);font-size:0.72rem;color:var(--mid-gray);line-height:1.7;">
+        <strong style="color:var(--off-black);font-size:0.64rem;letter-spacing:0.14em;text-transform:uppercase;display:block;margin-bottom:0.5rem;">Good to know</strong>
+        $40 deposit required to reserve (deducted from your final bill) · 1 hour minimum · NYC tax & gratuity added · 21+ after 8PM on Fri & Sat · We hold 1 ID + 1 credit card during your stay · Cancellations become store credit
+      </div>
     </div>
   </div>
 </section>
@@ -286,7 +295,7 @@
       </div>
       <div class="footer-col"><h5>Explore</h5><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Private Rooms</a></li><li><a href="menu.html">Food & Drinks</a></li><li><a href="visit.html">Visit Us</a></li><li><a href="#specials">Daily Specials</a></li><li><a href="#packages">Packages</a></li></ul></div>
       <div class="footer-col"><h5>Visit</h5><ul><li><a href="tel:+17182242434">718-224-2434</a></li><li><a href="visit.html">Hours & Location</a></li><li><a href="https://www.karaokexmas.com">karaokexmas.com</a></li><li><a href="https://instagram.com/christmas_karaoke">@christmas_karaoke</a></li></ul></div>
-      <div class="footer-col"><h5>Hours</h5><ul class="footer-hours"><li><span>Mon – Thu</span><strong>6pm – 2am</strong></li><li><span>Fri</span><strong>5pm – 4am</strong></li><li><span>Sat</span><strong>5pm – 4am</strong></li><li><span>Sun</span><strong>5pm – 2am</strong></li></ul></div>
+      <div class="footer-col"><h5>Hours</h5><ul class="footer-hours"><li><span>Sun · Fri · Sat</span><strong>3pm – 4am</strong></li><li><span>Mon – Thu</span><strong>4pm – 4am</strong></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© <span id="footer-year">2026</span> Christmas Karaoke NYC · 47-29 Bell Blvd, Bayside NY 11361</p>

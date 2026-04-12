@@ -26,6 +26,7 @@
       <li><a href="rooms.html" class="active">Rooms</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="visit.html">Visit</a></li>
+      <li><a href="https://playboxkaraoke.com/search/" target="_blank" rel="noopener">Song Search</a></li>
     </ul>
     <div class="nav-book"><a href="index.html#booking" class="btn btn-red">Book a Room</a></div>
     <button class="nav-burger" onclick="toggleNav()" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -36,6 +37,7 @@
   <a href="rooms.html" onclick="closeNav()">Rooms</a>
   <a href="menu.html" onclick="closeNav()">Menu</a>
   <a href="visit.html" onclick="closeNav()">Visit</a>
+  <a href="https://playboxkaraoke.com/search/" target="_blank" rel="noopener" onclick="closeNav()">Song Search</a>
   <a href="index.html#booking" onclick="closeNav()" class="drawer-book">Book a Room →</a>
 </div>
 
@@ -61,6 +63,41 @@
   <div class="rooms-footer reveal"><a href="index.html#booking" class="btn btn-red btn-lg">Book a Room →</a></div>
 </section>
 
+<!-- ROOM RATES -->
+<section id="room-rates" style="padding:6rem 5%;background:var(--cream);border-top:1px solid var(--border-dark);">
+  <div style="max-width:900px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <p class="section-eyebrow reveal" style="justify-content:center;">Pricing</p>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;color:var(--off-black);margin-top:0.5rem;">Room <em style="font-style:italic;color:var(--red);">rates.</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:2rem;" class="reveal">
+      <div style="padding:2rem;background:var(--warm-white);border:1px solid var(--border-dark);border-radius:var(--radius-xl);text-align:center;">
+        <div style="font-size:0.64rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;">Standard Rooms</div>
+        <div style="font-family:var(--font-display);font-size:2.8rem;font-weight:900;color:var(--off-black);line-height:1;margin-bottom:0.25rem;"><sup style="font-size:1rem;vertical-align:super;">$</sup>10<small style="font-size:0.85rem;font-weight:400;opacity:0.5;">/person/hr</small></div>
+        <div style="font-size:0.78rem;color:var(--mid-gray);line-height:1.6;margin-top:0.75rem;">Min $30/hr Sun–Thu<br>Min $40/hr Fri & Sat<br>1 hour minimum · Prorated after</div>
+      </div>
+      <div style="padding:2rem;background:var(--warm-white);border:1px solid var(--border-dark);border-radius:var(--radius-xl);text-align:center;">
+        <div style="font-size:0.64rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;">Happy Hour · Until 8PM</div>
+        <div style="font-family:var(--font-display);font-size:2.8rem;font-weight:900;color:var(--off-black);line-height:1;margin-bottom:0.25rem;"><sup style="font-size:1rem;vertical-align:super;">$</sup>6<small style="font-size:0.85rem;font-weight:400;opacity:0.5;">/person/hr</small></div>
+        <div style="font-size:0.78rem;color:var(--mid-gray);line-height:1.6;margin-top:0.75rem;">Every day of the week<br>Walk-ins welcome<br>1 hour minimum · Prorated after</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;" class="reveal d1">
+      <div style="padding:1.5rem 1.75rem;background:var(--dark-panel);border:1px solid rgba(232,191,96,0.3);border-radius:var(--radius-xl);color:#fff;">
+        <div style="font-size:0.64rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:0.6rem;">VIP Room #1 · Largest in NYC</div>
+        <div style="font-family:var(--font-display);font-size:2.2rem;font-weight:900;color:var(--gold-bright);line-height:1;margin-bottom:0.25rem;"><sup style="font-size:0.9rem;vertical-align:super;">$</sup>250<small style="font-size:0.78rem;font-weight:400;color:rgba(255,255,255,0.55);">/hour flat</small></div>
+        <div style="font-size:0.78rem;color:rgba(255,255,255,0.62);line-height:1.6;margin-top:0.5rem;">Fits 25–50 people · Flat rate, not per person · NYC tax & gratuity added</div>
+      </div>
+      <div style="padding:1.5rem 1.75rem;background:var(--dark-panel);border:1px solid rgba(232,191,96,0.3);border-radius:var(--radius-xl);color:#fff;">
+        <div style="font-size:0.64rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:0.6rem;">VIP Room #6</div>
+        <div style="font-family:var(--font-display);font-size:2.2rem;font-weight:900;color:var(--gold-bright);line-height:1;margin-bottom:0.25rem;"><sup style="font-size:0.9rem;vertical-align:super;">$</sup>200<small style="font-size:0.78rem;font-weight:400;color:rgba(255,255,255,0.55);">/hour flat</small></div>
+        <div style="font-size:0.78rem;color:rgba(255,255,255,0.62);line-height:1.6;margin-top:0.5rem;">Fits 20–35 people · Flat rate, not per person · NYC tax & gratuity added</div>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:0.75rem;color:var(--mid-gray);margin-top:1.5rem;line-height:1.6;" class="reveal d2">NYC tax and gratuity will be added to the final bill. Drink packages available — <a href="index.html#packages" style="color:var(--red);font-weight:700;">see packages</a>.</p>
+  </div>
+</section>
+
 <!-- ROOM FEATURES -->
 <section id="room-features">
   <div class="room-features-header">
@@ -70,7 +107,7 @@
   <div class="room-features-grid">
     <div class="rf-item reveal">
       <div class="rf-icon"><svg viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></div>
-      <div class="rf-text"><div class="rf-name">Wireless Mics</div><div class="rf-sub">Two per room, swap instantly between singers.</div></div>
+      <div class="rf-text"><div class="rf-name">Microphones in Every Room</div><div class="rf-sub">Two mics per room.</div></div>
     </div>
     <div class="rf-item reveal d1">
       <div class="rf-icon"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
@@ -78,15 +115,15 @@
     </div>
     <div class="rf-item reveal d2">
       <div class="rf-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M12 8v8M8 12h8"/></svg></div>
-      <div class="rf-text"><div class="rf-name">Touchscreen Songbook</div><div class="rf-sub">Search, queue, and control everything from your table.</div></div>
+      <div class="rf-text"><div class="rf-name">Song Selection System</div><div class="rf-sub">Search and queue songs from your room. <a href="https://playboxkaraoke.com/search/" target="_blank" rel="noopener" style="color:var(--red);font-weight:700;">Search our song library →</a></div></div>
     </div>
     <div class="rf-item reveal">
       <div class="rf-icon"><svg viewBox="0 0 24 24"><path d="M17 11h1a3 3 0 0 1 0 6h-1"/><path d="M9 12v6M13 12v6"/><path d="M14 7.5c-1 0-1.44.5-3 .5s-2-.5-3-.5-1.72.5-2.5.5a2.5 2.5 0 0 1 0-5c.78 0 1.57.5 2.5.5C9.44 3.5 10 3 11 3s1.56.5 3 .5 2.5-.5 3-.5a2.5 2.5 0 0 1 0 5c-.78 0-1.5-.5-3-.5Z"/><path d="M5 8v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"/></svg></div>
       <div class="rf-text"><div class="rf-name">Full Bar Service</div><div class="rf-sub">Cocktails, beer, wine, soju, shots — delivered to your room.</div></div>
     </div>
     <div class="rf-item reveal d1">
-      <div class="rf-icon"><svg viewBox="0 0 24 24"><path d="M4 10a8 8 0 0 1 16 0v4a8 8 0 0 1-16 0z"/><path d="M4 10h16M8 14h.01M16 14h.01"/></svg></div>
-      <div class="rf-text"><div class="rf-name">Bluetooth Input</div><div class="rf-sub">Hook up your own playlist or sing along to Spotify.</div></div>
+      <div class="rf-icon"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div>
+      <div class="rf-text"><div class="rf-name">Open 'til 4AM</div><div class="rf-sub">Every night. No exceptions.</div></div>
     </div>
     <div class="rf-item reveal d2">
       <div class="rf-icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg></div>
@@ -107,18 +144,34 @@
       <div class="faq-a">Fill out the reservation form on the <a href="index.html#booking">homepage</a> or call <a href="tel:+17182242434">718-224-2434</a>. We confirm within 2 hours. Walk-ins welcome any night, but weekends book up fast.</div>
     </div>
     <div class="faq-item reveal d1">
-      <div class="faq-q">Can I bring my own cake or decorations?</div>
-      <div class="faq-a">Yes. Outside cake, balloons, and decorations are welcome for birthdays and bachelorette parties. Just let us know when you book so we can set up the room.</div>
+      <div class="faq-q">Is there a deposit?</div>
+      <div class="faq-a">Yes — a $40 deposit is required to reserve your room. We deduct it from your final bill when you check out. We will not have your card info on file at checkout — bring a card to settle.</div>
     </div>
     <div class="faq-item reveal d2">
-      <div class="faq-q">Is there a minimum or cover charge?</div>
-      <div class="faq-a">No cover charge. Room rental covers your time. Drinks and food are ordered separately, or you can choose one of our <a href="index.html#packages">drink packages</a> that bundle everything together.</div>
+      <div class="faq-q">What if I need to cancel?</div>
+      <div class="faq-a">Your $40 deposit becomes store credit. You can use it for another reservation or a future visit — it doesn't expire.</div>
     </div>
     <div class="faq-item reveal d3">
-      <div class="faq-q">What's the biggest room you have?</div>
-      <div class="faq-a">Our largest rooms fit up to 50 guests. For groups of 30+, call ahead — we can combine rooms or reserve a private floor for corporate events and big birthdays.</div>
+      <div class="faq-q">Is there a minimum?</div>
+      <div class="faq-a">1 hour minimum for all rooms. After the first hour, time is prorated — so you only pay for what you use. No cover charge. Drinks and food are ordered separately, or grab one of our <a href="index.html#packages">drink packages</a>.</div>
     </div>
     <div class="faq-item reveal d4">
+      <div class="faq-q">Is there an age requirement?</div>
+      <div class="faq-a">All guests must be at least 21 years old after 8 PM on Fridays and Saturdays. Before 8 PM and on other nights, all ages are welcome.</div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">What do you hold during the stay?</div>
+      <div class="faq-a">We hold 1 ID and 1 credit card for the room during your stay. You'll get both back when you check out.</div>
+    </div>
+    <div class="faq-item reveal d1">
+      <div class="faq-q">What's the biggest room you have?</div>
+      <div class="faq-a">VIP Room #1 is the largest karaoke room in NYC — fits 25 to 50 people at a flat $250/hr. VIP Room #6 fits 20–35 at $200/hr. Both are booked by the hour, not per person. Call <a href="tel:+17182242434">718-224-2434</a> for VIP availability.</div>
+    </div>
+    <div class="faq-item reveal d2">
+      <div class="faq-q">Can I bring my own cake or decorations?</div>
+      <div class="faq-a">Yes. Outside cake, balloons, and decorations are welcome for birthdays and parties. Let us know when you book so we can set up the room.</div>
+    </div>
+    <div class="faq-item reveal d3">
       <div class="faq-q">Do you have a song I can request?</div>
       <div class="faq-a">Probably — the library has 100,000+ songs across every genre, era, and language. If something's missing, send us the title ahead of your booking and we'll do our best to queue it.</div>
     </div>
@@ -140,7 +193,7 @@
       </div>
       <div class="footer-col"><h5>Explore</h5><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Private Rooms</a></li><li><a href="menu.html">Food & Drinks</a></li><li><a href="visit.html">Visit Us</a></li><li><a href="index.html#specials">Daily Specials</a></li><li><a href="index.html#packages">Packages</a></li></ul></div>
       <div class="footer-col"><h5>Visit</h5><ul><li><a href="tel:+17182242434">718-224-2434</a></li><li><a href="visit.html">Hours & Location</a></li><li><a href="https://www.karaokexmas.com">karaokexmas.com</a></li><li><a href="https://instagram.com/christmas_karaoke">@christmas_karaoke</a></li></ul></div>
-      <div class="footer-col"><h5>Hours</h5><ul class="footer-hours"><li><span>Mon – Thu</span><strong>6pm – 2am</strong></li><li><span>Fri</span><strong>5pm – 4am</strong></li><li><span>Sat</span><strong>5pm – 4am</strong></li><li><span>Sun</span><strong>5pm – 2am</strong></li></ul></div>
+      <div class="footer-col"><h5>Hours</h5><ul class="footer-hours"><li><span>Sun · Fri · Sat</span><strong>3pm – 4am</strong></li><li><span>Mon – Thu</span><strong>4pm – 4am</strong></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© <span id="footer-year">2026</span> Christmas Karaoke NYC · 47-29 Bell Blvd, Bayside NY 11361</p>

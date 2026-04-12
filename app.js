@@ -41,15 +41,15 @@ function switchMenu(id, btn){
 // Time + hours logic
 const now = new Date();
 const day = now.getDay();
-const hoursById = {1:'h-weekday',2:'h-weekday',3:'h-weekday',4:'h-weekday',5:'h-fri',6:'h-sat',0:'h-sun'};
+const hoursById = {0:'h-sun',1:'h-mon',2:'h-tue',3:'h-wed',4:'h-thu',5:'h-fri',6:'h-sat'};
 const todayHoursEl = document.getElementById(hoursById[day]);
 if(todayHoursEl) todayHoursEl.classList.add('today-row');
-const todayHoursText = {1:'6:00 PM – 2:00 AM',2:'6:00 PM – 2:00 AM',3:'6:00 PM – 2:00 AM',4:'6:00 PM – 2:00 AM',5:'5:00 PM – 4:00 AM',6:'5:00 PM – 4:00 AM',0:'5:00 PM – 2:00 AM'};
+const todayHoursText = {0:'3:00 PM – 4:00 AM',1:'4:00 PM – 4:00 AM',2:'4:00 PM – 4:00 AM',3:'4:00 PM – 4:00 AM',4:'4:00 PM – 4:00 AM',5:'3:00 PM – 4:00 AM',6:'3:00 PM – 4:00 AM'};
 const tonightEl = document.getElementById('hero-tonight-time');
 if(tonightEl) tonightEl.textContent = todayHoursText[day];
 
 // Open Now live check — schedule in decimal hours (local time). Close may extend past midnight.
-const schedule = {1:[18,26],2:[18,26],3:[18,26],4:[18,26],5:[17,28],6:[17,28],0:[17,26]};
+const schedule = {0:[15,28],1:[16,28],2:[16,28],3:[16,28],4:[16,28],5:[15,28],6:[15,28]};
 const yesterday = (day + 6) % 7;
 const hour = now.getHours() + now.getMinutes()/60;
 const [todayOpen, todayClose] = schedule[day];
