@@ -18,8 +18,8 @@
   /* MUTED ON DARK — WCAG-safe */
   --on-dark-strong:rgba(255,255,255,0.88);
   --on-dark-muted:rgba(255,255,255,0.62);
-  --on-dark-faint:rgba(255,255,255,0.45);
-  --on-dark-label:rgba(255,255,255,0.55);
+  --on-dark-faint:rgba(255,255,255,0.58);
+  --on-dark-label:rgba(255,255,255,0.62);
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
