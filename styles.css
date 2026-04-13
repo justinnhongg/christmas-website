@@ -256,6 +256,35 @@ button{font-family:inherit;cursor:pointer;border:none;}
 .room-photo-num{position:absolute;top:14px;left:16px;font-size:0.62rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(232,191,96,0.62);z-index:2;font-family:var(--font-body);}
 .rooms-footer{max-width:1260px;margin:2.5rem auto 0;text-align:center;}
 
+/* ROOM RATES */
+#room-rates{padding:6rem 5%;background:var(--cream);border-top:1px solid var(--border-dark);}
+.rates-inner{max-width:900px;margin:0 auto;}
+.rates-header{text-align:center;margin-bottom:3rem;}
+.rates-header .section-eyebrow{justify-content:center;}
+.rates-header .section-eyebrow::before{content:'';flex:1;max-width:36px;height:1px;background:var(--gold);}
+.rates-h2{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;color:var(--off-black);margin-top:0.5rem;}
+.rates-h2 em{font-style:italic;color:var(--red);}
+.rates-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.rates-grid-spaced{margin-bottom:2rem;}
+.rate-card{padding:2rem;background:var(--warm-white);border:1px solid var(--border-dark);border-radius:var(--radius-xl);text-align:center;}
+.rate-card-dark{padding:1.5rem 1.75rem;background:var(--dark-panel);border:1px solid rgba(232,191,96,0.3);border-radius:var(--radius-xl);color:#fff;}
+.rate-label{font-size:0.64rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;}
+.rate-card-dark .rate-label{color:var(--gold-bright);margin-bottom:0.6rem;}
+.rate-price{font-family:var(--font-display);font-size:2.8rem;font-weight:900;color:var(--off-black);line-height:1;margin-bottom:0.25rem;}
+.rate-price sup{font-size:1rem;vertical-align:super;}
+.rate-price small{font-size:0.85rem;font-weight:400;opacity:0.55;}
+.rate-card-dark .rate-price{font-size:2.2rem;color:var(--gold-bright);}
+.rate-card-dark .rate-price sup{font-size:0.9rem;}
+.rate-card-dark .rate-price small{color:var(--on-dark-label);}
+.rate-detail{font-size:var(--text-sm);color:var(--mid-gray);line-height:1.6;margin-top:0.75rem;}
+.rate-card-dark .rate-detail{color:var(--on-dark-muted);margin-top:0.5rem;}
+.rates-note{text-align:center;font-size:0.75rem;color:var(--mid-gray);margin-top:1.5rem;line-height:1.6;}
+.rates-note a{color:var(--red);font-weight:700;}
+@media(max-width:768px){.rates-grid{grid-template-columns:1fr;}}
+
+/* HAPPY HOUR CENTERED CARD */
+.special-offers-single{max-width:560px;margin:0 auto;}
+
 /* ROOM FEATURES (what every room includes) */
 #room-features{padding:6rem 5%;background:var(--cream);border-top:1px solid var(--border-dark);}
 .room-features-header{max-width:1260px;margin:0 auto 2.5rem;text-align:center;}
